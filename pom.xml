@@ -1,0 +1,46 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.amardinsa</groupId>
+  <artifactId>huffman</artifactId>
+  <version>1</version>
+
+  <properties>
+    <scala.version>2.9.0</scala.version>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.scala-lang</groupId>
+      <artifactId>scala-compiler</artifactId>
+      <version>${scala.version}</version>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <sourceDirectory>src/main/scala</sourceDirectory>
+    <plugins>
+      <plugin>
+        <groupId>net.alchim31.maven</groupId>
+        <artifactId>scala-maven-plugin</artifactId>
+        <version>3.2.0</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>compile</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <scalaVersion>${scala.version}</scalaVersion>
+          <launchers>
+            <launcher>
+              <id>main</id>
+              <mainClass>com.amardinsa.huffman</mainClass>
+            </launcher>
+          </launchers>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
