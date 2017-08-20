@@ -1,10 +1,10 @@
 # huffman
 A toy implementation of Huffman file compression (and a foray into Scala) 
 
-Uses Maven with [scala-maven-plugin] (http://davidb.github.io/scala-maven-plugin/) 
+Uses Maven with [scala-maven-plugin](http://davidb.github.io/scala-maven-plugin/) 
 so it may be run without installing Scala.
 
-##Usage
+## Usage
 ```
 amar@localhost:~/huffman$ mvn scala:run
 
@@ -15,7 +15,7 @@ Compress or decompress INPUT_FILE and write to OUTPUT_FILE
     -c               Compress
     -d               Decompress
 ```
-####Compress
+#### Compress
 ```
 amar@localhost:~/huffman$ mvn scala:run -DaddArgs="-c|src/main/resources/alice29.txt|compressed.huf"
 
@@ -23,7 +23,7 @@ amar@localhost:~/huffman$ mvn scala:run -DaddArgs="-c|src/main/resources/alice29
         Compressed size: 90626 bytes
           Space savings: 38.96%
 ```
-####Decompress
+#### Decompress
 ```
 amar@localhost:~/huffman$ mvn scala:run -DaddArgs="-d|compressed.huf|alice.txt"
 
