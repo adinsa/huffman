@@ -1,5 +1,5 @@
 # huffman
-A toy implementation of Huffman file compression (and a foray into Scala) 
+A toy implementation of Huffman file compression (and a foray into Scala).
 
 Uses Maven with [scala-maven-plugin](http://davidb.github.io/scala-maven-plugin/) 
 so it may be run without installing Scala.
